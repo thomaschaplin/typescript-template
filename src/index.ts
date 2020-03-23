@@ -1,3 +1,3 @@
 import {sayHello} from './hello'
 
-sayHello('Thomas')
+sayHello('Thomas Chaplin')
