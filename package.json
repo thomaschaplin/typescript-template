@@ -43,6 +43,13 @@
         "rimraf": "^3.0.2",
         "typescript": "^3.8.3"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "./prepush.sh",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
     "lint-staged": {
         "linters": {
             "*.ts": [
