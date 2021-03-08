@@ -20,10 +20,10 @@ npm install ???
 Find full example [here](https://github.com/thomaschaplin/) but see the below code snippet
 
 ```ts
-import { templateCode } from "@thomaschaplin/???";
+import {add} from "typescript-template"
 
-const template = templateCode()
-console.log(template)
+const answer = add(1, 2)
+console.log(answer)
 ```
 
 ## Description
