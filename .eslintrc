@@ -1,22 +1,36 @@
 {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "modules": true
-        }
-    },
-    "plugins": ["@typescript-eslint", "prettier"],
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier"
-    ],
-    "rules": {
-        "no-console": 1,
-        "prettier/prettier": 2
+  "extends": "@thomaschaplin",
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
     }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "jest"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js"
+        ],
+        "paths": [
+          "."
+        ]
+      }
+    }
+  },
+  "rules": {
+    "no-console": 0,
+    "no-template-curly-in-string": 0,
+    "no-await-in-loop": 0
+  },
+  "env": {
+    "jest/globals": true
+  }
 }

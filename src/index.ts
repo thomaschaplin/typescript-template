@@ -1,3 +1,1 @@
-import {sayHello} from './hello'
-
-sayHello('Thomas Chaplin')
+export {add} from "./add"
